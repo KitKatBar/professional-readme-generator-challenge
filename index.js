@@ -7,37 +7,37 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [
     {
         type: "input",
-        message: "Please enter your project title: ",
+        message: "1. Please enter your project title: ",
         name: "title"
     },
     {
         type: "input",
-        message: "Please provide a short description explaining the what, why, and how of your project: ",
+        message: "2. Please provide a short description explaining the what, why, and how of your project: ",
         name: "description"
     },
     {
         type: "input",
-        message: "Please provide the required steps required to install your project: ",
+        message: "3. Please provide the required steps required to install your project: ",
         name: "installation"
     },
     {
         type: "input",
-        message: "Please provide instructions and examples for use: ",
+        message: "4. Please provide instructions and examples for use: ",
         name: "usage"
     },
     {
         type: "input",
-        message: "Please provide guidelines on how to contribute to your project: ",
+        message: "5. Please provide guidelines on how to contribute to your project: ",
         name: "contribution"
     },
     {
         type: "input",
-        message: "Please provide any test applications and how to run them: ",
+        message: "6. Please provide any test applications and how to run them: ",
         name: "test"
     },
     {
         type: "list",
-        message: "Please select a license for your project: ",
+        message: "7. Please select a license for your project: ",
         name: "license",
         choices: [
             "None",
@@ -58,12 +58,12 @@ const questions = [
     },
     {
         type: "input",
-        message: "Please enter your GitHub username: ",
+        message: "8. Please enter your GitHub username: ",
         name: "github"
     },
     {
         type: "input",
-        message: "Please enter your e-mail address: ",
+        message: "9. Please enter your e-mail address: ",
         name: "email"
     }
 ];
