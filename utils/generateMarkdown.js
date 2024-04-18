@@ -1,5 +1,8 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+/*
+  Function that returns a license badge based on which license is passed in
+  If there is no license, return an empty string
+  Uses a switch statement with cases for each license badge
+*/
 function renderLicenseBadge(license) {
   switch(license) {
     case "Apache License 2.0":
@@ -33,8 +36,11 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+/* 
+  Function that returns the license link
+  If there is no license, return an empty string
+  Uses a switch statement with cases for each license link
+*/
 function renderLicenseLink(license) {
   switch(license) {
     case "Apache License 2.0":
@@ -68,8 +74,10 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+/*
+  Function that returns the license section of README
+  If there is no license, instead of returning an empty string, just return 'no license'
+*/
 function renderLicenseSection(license) {
   if (license !== "None") {
     return `This project was built using the ${license}. Please refer to the LICENSE in the repo for more information.`;
@@ -80,7 +88,7 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
   
@@ -155,6 +163,7 @@ Have additional questions about this project?  You can reach out to me with any 
 `;
 }
 
+// This is a helper function that will generate the additional table of contents headers if available
 function tableOfContentsGenerator(data) {
   let appendString = "";
 
@@ -173,6 +182,7 @@ function tableOfContentsGenerator(data) {
   return appendString;
 }
 
+// This is a helper function to replace the 'Test' section because it is very specific and user input can't handle all these lines
 function defaultTest(test) {
   return `In order to test this README generator, you can copy and paste these answers for their respective prompts.  The prompts have been numbered for your convenience.
 
@@ -222,4 +232,5 @@ function defaultTest(test) {
   \`\`\``;
 }
 
+// Export our function to be used in the other file
 module.exports = generateMarkdown;
