@@ -121,6 +121,8 @@ ${data.installation}
 ## Usage
 
 ${data.usage}
+
+Additionally, I have provided a walkthrough video demonstrating how to use this program.  Click on [this link] to access the video.
         
 ## Credits
 
@@ -186,23 +188,7 @@ function defaultTest(test) {
   
   Please provide the required steps required to install your project:
   \`\`\`
-  1. Clone the repo into your local system.
-  
-  HTTPS:
-  \`\`\`
-  git clone https://github.com/KitKatBar/professional-readme-generator-challenge.git
-  \`\`\`
-  
-  SSH:
-  \`\`\`
-  git clone git@github.com:KitKatBar/professional-readme-generator-challenge.git
-  \`\`\`
-  
-  2. Download inquirer using the following command.
-  
-  \`\`\`
   npm i inquirer@8.2.4
-  \`\`\`
   \`\`\`
   
   Please provide instructions and examples for use:
