@@ -40,6 +40,7 @@ const questions = [
         message: "Please select a license for your project: ",
         name: "license",
         choices: [
+            "None",
             "Apache License 2.0",
             "GNU General Public License v3.0",
             "MIT License",
