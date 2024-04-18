@@ -115,7 +115,7 @@ git clone git@github.com:KitKatBar/professional-readme-generator-challenge.git
 2. Download inquirer using the following command.
 
 \`\`\`
-npm i inquirer@8.2.4
+${data.installation}
 \`\`\`
 
 ## Usage
@@ -157,18 +157,17 @@ function tableOfContentsGenerator(data) {
   let appendString = "";
 
   if (data.contribution !== "") {
-    appendString = appendString.concat("- [How to Contribute](#how-to-contribute)");
+    appendString = appendString.concat("- [How to Contribute](#how-to-contribute)\n");
   }
 
   if (data.test !== "") {
-    appendString = appendString.concat("- [Tests](#tests)");
+    appendString = appendString.concat("- [Tests](#tests)\n");
   }
 
   if ((data.github !== "") || (data.email !== "")) {
-    appendString = appendString.concat("- [Questions](#questions)");
+    appendString = appendString.concat("- [Questions](#questions)\n");
   }
 
-  console.log(appendString);
   return appendString;
 }
 
@@ -182,9 +181,7 @@ function defaultTest(test) {
   
   Please provide a short description explaining the what, why, and how of your project:
   \`\`\`
-  When creating an open source project on GitHub, it's important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.
-  
-  You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project.
+  When creating an open source project on GitHub, it's important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project. You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project.
   \`\`\`
   
   Please provide the required steps required to install your project:
@@ -210,9 +207,7 @@ function defaultTest(test) {
   
   Please provide instructions and examples for use:
   \`\`\`
-  This project automatically generates a professional README.  The user will be prompted with several questions for input.
-  
-  To get test input, please see the [Tests](#tests) section of this README.
+  This project automatically generates a professional README.  The user will be prompted with several questions for input.  To get test input, please see the [Tests](#tests) section of this README.
   \`\`\`
   
   Please provide guidelines on how to contribute to your project:
