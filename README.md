@@ -41,7 +41,7 @@ npm i inquirer@8.2.4
 
 This project automatically generates a professional README.  The user will be prompted with several questions for input.  To get test input, please see the [Tests](#tests) section of this README.
 
-Additionally, I have provided a walkthrough video demonstrating how to use this program.  Click on [this link] to access the video.
+Additionally, I have provided a walkthrough video demonstrating how to use this program.  Click on [this link](https://drive.google.com/file/d/1ps7iYXFsbqvFB8ol70hnjE6tZt1LGvkB/view) to access the video.
         
 ## Credits
 
